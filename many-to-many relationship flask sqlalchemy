@@ -225,6 +225,7 @@ def error_405(_error):
 @app.errorhandler(405) 
 def error_405(_error): 
     return make_response(jsonify({'error': 'Method Not Allowed'}), 405 )
+    
 #------------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__": 
     app.run(debug = True)
